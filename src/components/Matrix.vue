@@ -67,14 +67,16 @@
 </script>
 <style>
     .hideNumber {
-        color: rgba(0,0,0,1)
+      color: rgba(0,0,0,1)
     }
     .buttonNumber{
-        width: 50px;
-        height: 50px;
-        color: rgba(0,0,0,1)
+      width: 9vw;
+      height: 9vw;
+      max-height: 50px;
+      max-width: 50px;
+      color: rgba(0,0,0,1)
     }
     .buttonNumber:hover{
-        background-color:pink;
+      background-color:pink;
     }
 </style>

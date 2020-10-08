@@ -2,8 +2,8 @@ import { setupMaster } from "cluster"
 
 <template>
   <div id="app">
-    <button @click="sumar">Sumas</button>
-    <button @click="multiplicar">Multiplicaciones</button>
+    <!-- <button @click="sumar">Sumas</button> -->
+    <button class="option" @click="multiplicar">Multiplicaciones</button>
     <Tablas v-if="multiplicaciones" msg="Multiplicaciones"/>
     <Sumas v-if="sumas"></Sumas>
   </div>
@@ -45,11 +45,24 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-  height:1000px;
-  width:2000px;
-  background-image:url("./assets/mario.jpg");
-  //background-position-x: -400px;
-  //background-color: black;
+  min-height:100vh;
+  width:100%;
+  /* background-image:url("./assets/mario.jpg");
+  background-position-x: -400px; */
+  background-color: #333;
 }
+.option {
+    min-width: 150px;
+    padding: 8px;
+    background-color: white;
+    color: black;
+    margin-top: 5px;
+    border: none;
+    border-radius: 3px;
+}
+.option:hover {
+  background-color: #333;
+  color: white;
+}
+body{margin:0;}
 </style>

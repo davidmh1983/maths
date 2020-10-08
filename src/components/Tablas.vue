@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <button v-on:click="multiplicar">
+    <button class="practice" v-on:click="multiplicar">
       Practicar
     </button>
 
@@ -49,5 +49,18 @@ li {
 }
 a {
   color: #42b983;
+}
+.practice{
+  min-width: 150px;
+    padding: 8px;
+    background-color: white;
+    color: black;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 3px;
+}
+.practice:hover {
+  background-color: #333;
+  color: white;
 }
 </style>

@@ -4,7 +4,7 @@
             {{numA}} + {{numB}} = <input style="width:150px; font-size:100px;" v-model="result"/>
         </div>
         
-        <div @click="corregir">Corregir</div>
+        <div class="corregir" @click="corregir">Corregir</div>
         <div>Siguiente</div>
         <blocks :num1="numA" :num2="numB"></blocks>
     </div>
@@ -34,5 +34,6 @@
 </script>
 
 <style>
+    
 
 </style>
